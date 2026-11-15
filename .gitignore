@@ -1,0 +1,8 @@
+/.rate
+/mcp/.rate
+.meirinho-mcp-rate
+.env
+.env.*
+/vendor/
+*.log
+.DS_Store

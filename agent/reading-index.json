@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "collection": "artigos",
+      "kind": "artigo",
+      "lang": "en",
+      "group": "local-example",
+      "slug": "local-example",
+      "title": "Sample note for local tests",
+      "description": "A fictional item so the PHP server can run on your computer.",
+      "url": "https://meirinho.com.br/blog/local-example/",
+      "date": "2026-11-15",
+      "body": "This text is not on the live site. It exists only so you can try search, list, and get locally.",
+      "sources": [],
+      "hay": "sample local test php mcp"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+# Apache front controller for the read-only MCP endpoint.
+# Library files and rate-limit counters are not public URLs.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^(?:lib|\.rate)(?:/|$) - [F,L]
+  # /mcp is a real directory, so a rewrite at the site root does not reach /mcp/http.
+  RewriteRule ^http(?:/.*)?$ index.php [L,QSA]
+</IfModule>
+<IfModule mod_headers.c>
+  Header set Cache-Control "no-store"
+  Header set X-Robots-Tag "noindex"
+</IfModule>
